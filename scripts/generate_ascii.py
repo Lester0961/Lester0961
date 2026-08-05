@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import html
+import re
 from pathlib import Path
 
 from PIL import Image, ImageEnhance, ImageFilter, ImageOps
@@ -28,7 +29,9 @@ def portrait_to_ascii(image_path: Path, width: int) -> list[str]:
 
     pixels = list(image.getdata())
     return [
-        "".join(RAMP[pixel * (len(RAMP) - 1) // 255] for pixel in pixels[row * width : (row + 1) * width])
+        # Dark details use dense glyphs, while the white studio background stays
+        # empty.  This is the conventional terminal-art brightness mapping.
+        "".join(RAMP[(255 - pixel) * (len(RAMP) - 1) // 255] for pixel in pixels[row * width : (row + 1) * width])
         for row in range(height)
     ]
 
@@ -57,9 +60,15 @@ def main() -> None:
     replacement = svg_tspans(art)
     for template in args.templates:
         content = template.read_text(encoding="utf-8")
-        if "{{ASCII_PORTRAIT}}" not in content:
-            raise SystemExit(f"{template} does not contain the ASCII placeholder")
-        template.write_text(content.replace("{{ASCII_PORTRAIT}}", replacement), encoding="utf-8")
+        if "{{ASCII_PORTRAIT}}" in content:
+            updated = content.replace("{{ASCII_PORTRAIT}}", replacement)
+        else:
+            # Regenerate art safely after templates have already been expanded.
+            pattern = r'(<text x="40" y="75" class="ascii" xml:space="preserve">).*?(</text>)'
+            updated, substitutions = re.subn(pattern, lambda match: match.group(1) + replacement + match.group(2), content, flags=re.DOTALL)
+            if substitutions != 1:
+                raise SystemExit(f"Could not locate the ASCII portrait in {template}")
+        template.write_text(updated, encoding="utf-8")
 
 
 if __name__ == "__main__":
