@@ -212,7 +212,7 @@ def collect_commits(client: GitHubClient, cache: dict[str, Any], repositories: l
     return sorted(all_commits.values(), key=lambda item: (item.get("date", ""), item["sha"]))
 
 
-def range_rows(commits: list[dict[str, Any]], max_rows: int = 5) -> list[dict[str, Any]]:
+def range_rows(commits: list[dict[str, Any]]) -> list[dict[str, Any]]:
     buckets: dict[int, list[dict[str, Any]]] = defaultdict(list)
     for number, commit in enumerate(commits, start=1):
         buckets[(number - 1) // 100].append(commit)
@@ -224,14 +224,14 @@ def range_rows(commits: list[dict[str, Any]], max_rows: int = 5) -> list[dict[st
         added = sum(int(item["additions"]) for item in bucket)
         deleted = sum(int(item["deletions"]) for item in bucket)
         rows.append({"label": f"Commits {start:03d}-{end:03d}", "added": added, "deleted": deleted, "net": added - deleted})
-    return rows[-max_rows:]
+    return rows
 
 
 def format_signed(value: int) -> str:
     return f"{value:+,}" if value else "0"
 
 
-def replace_svg(template: Path, output: Path, values: dict[str, str]) -> None:
+def replace_svg(template: Path, output: Path, values: dict[str, str], rows: list[dict[str, Any]]) -> None:
     parser = etree.XMLParser(remove_blank_text=False)
     tree = etree.parse(str(template), parser)
     for element_id, value in values.items():
@@ -239,11 +239,39 @@ def replace_svg(template: Path, output: Path, values: dict[str, str]) -> None:
         if not elements:
             raise ValueError(f"Missing SVG element id: {element_id}")
         elements[0].text = value
-    for number in range(1, 6):
-        row = tree.xpath(f"//*[@id='commit-range-{number}-row']")
-        if not row:
-            raise ValueError(f"Missing SVG commit row: {number}")
-        row[0].set("visibility", "visible" if values[f"commit-range-{number}-label"] else "hidden")
+    row_group = tree.xpath("//*[@id='commit-range-rows']")
+    if len(row_group) != 1:
+        raise ValueError("Missing SVG commit range group")
+    group = row_group[0]
+    for child in list(group):
+        group.remove(child)
+    namespace = "{http://www.w3.org/2000/svg}"
+    for index, row in enumerate(rows):
+        text = etree.SubElement(group, f"{namespace}text", {"x": "555", "y": str(628 + index * 20), "class": "copy"})
+        text.text = f"{row['label']}:  +{row['added']:,}  -{row['deleted']:,}  net {format_signed(row['net'])}"
+
+    # The terminal grows only when there are more than five ranges.  Every
+    # 100-commit sequence remains visible instead of discarding older rows.
+    overflow = max(0, len(rows) - 5) * 20
+    root = tree.getroot()
+    height = 884 + overflow
+    root.set("height", str(height))
+    root.set("viewBox", f"0 0 1200 {height}")
+    terminal = tree.xpath("//*[local-name()='rect' and @class='terminal']")
+    if terminal:
+        terminal[0].set("height", str(height - 2))
+    divider = tree.xpath("//*[@id='side-divider']")
+    if len(divider) != 1:
+        raise ValueError("Missing SVG side divider")
+    divider[0].set("y2", str(height - 34))
+    for element_id, base_y in {
+        "lines-heading": 740, "lines-values": 762, "contact-heading": 794,
+        "contact-line-1": 816, "contact-line-2": 836, "last-update-line": 864,
+    }.items():
+        element = tree.xpath(f"//*[@id='{element_id}']")
+        if len(element) != 1:
+            raise ValueError(f"Missing SVG layout element id: {element_id}")
+        element[0].set("y", str(base_y + overflow))
     output.parent.mkdir(parents=True, exist_ok=True)
     tree.write(str(output), encoding="utf-8", xml_declaration=True, pretty_print=True)
 
@@ -268,18 +296,12 @@ def main() -> None:
         "lines-added": f"{added:,}", "lines-deleted": f"{deleted:,}", "lines-net": format_signed(added - deleted),
         "last-update": datetime.now(UTC).strftime("%Y-%m-%d %H:%M UTC"),
     }
-    for number in range(1, 6):
-        row = rows[number - 1] if number <= len(rows) else None
-        values[f"commit-range-{number}-label"] = row["label"] if row else ""
-        values[f"commit-range-{number}-added"] = f"+{row['added']:,}" if row else ""
-        values[f"commit-range-{number}-deleted"] = f"-{row['deleted']:,}" if row else ""
-        values[f"commit-range-{number}-net"] = format_signed(row["net"]) if row else ""
     cache.update({
         "version": 1, "generated_at": datetime.now(UTC).isoformat(), "username": USERNAME,
         "summary": {"repositories": repo_count, "contributed_repositories": contributed_count, "commits": len(commits), "added": added, "deleted": deleted},
     })
     for theme, template in TEMPLATES.items():
-        replace_svg(template, OUTPUTS[theme], values)
+        replace_svg(template, OUTPUTS[theme], values, rows)
     save_cache(cache)
     print(f"Updated profile SVGs from {len(commits):,} eligible commits.")
 
