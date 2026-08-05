@@ -1,0 +1,46 @@
+name: Update profile statistics
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - assets/profile-dark.svg
+      - assets/profile-light.svg
+      - cache/github-stats.json
+  schedule:
+    - cron: '17 */6 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  update-profile:
+    # Do not create a loop from this workflow's own generated commit.
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+      - name: Refresh the terminal SVGs
+        env:
+          GH_USERNAME: Lester0961
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_profile.py
+      - name: Commit generated files
+        run: |
+          git add assets/profile-dark.svg assets/profile-light.svg cache/github-stats.json
+          if git diff --cached --quiet; then
+            echo "No generated profile changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: update profile statistics [skip profile stats]"
+          git push

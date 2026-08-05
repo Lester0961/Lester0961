@@ -1,57 +1,22 @@
-<h1 align="center">Hi! My name is Lester. Currently Unemployed lol</h1>
+<h1 align="center">Lester de Matera</h1>
 
-###
+<p align="center">Computer Science Student · Web Developer · Open to Opportunities</p>
 
-<div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="30" alt="typescript logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="30" alt="react logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" alt="html5 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" alt="css3 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="python logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" alt="css logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" height="30" alt="dart logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" height="30" alt="visualstudio logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=vercel" height="30" alt="vercel logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="30" alt="mysql logo"  />
-  <img width="12" />
-  <img src="https://skillicons.dev/icons?i=supabase" height="30" alt="supabase logo"  />
-</div>
-
-###
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-dark.svg">
+  <img width="100%" alt="Lester's terminal-style GitHub profile" src="./assets/profile-light.svg">
+</picture>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Lester0961&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=radical&locale=en&hide_border=true" height="150" alt="stats graph"  />
-  <img src="https://streak-stats.demolab.com?user=Lester0961&locale=en&mode=weekly&theme=radical&hide_border=true&border_radius=5&date_format=M%20j%5B,%20Y%5D" height="150" alt="streak graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Lester0961&locale=en&hide_title=true&layout=compact&card_width=320&langs_count=10&theme=radical&hide_border=true" height="150" alt="languages graph"  />
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Lester0961&theme=redical&hide_border=true&hide_title=true&area=true" height="" alt="activity-graph graph"  />
+  <a href="mailto:johnlesterdematera0961@gmail.com"><img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&style=flat" height="30" alt="Email Lester"></a>
+  <a href="https://www.linkedin.com/in/lester20/"><img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&style=flat" height="30" alt="Lester on LinkedIn"></a>
+  <a href="https://www.instagram.com/retsel.xviii/"><img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&style=flat" height="30" alt="Lester on Instagram"></a>
+  <a href="https://paypal.me/itslester09"><img src="https://img.shields.io/static/v1?message=PayPal&logo=paypal&label=&color=00457C&logoColor=white&style=flat" height="30" alt="Support Lester on PayPal"></a>
 </div>
-
-###
 
 <div align="center">
-  <a href="johnlesterdematera0961@gmail.com" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=flat" height="35" alt="gmail logo"  />
-  </a>
-  <a href="https://www.linkedin.com/in/lester20/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=flat" height="35" alt="linkedin logo"  />
-  </a>
-  <a href="https://www.instagram.com/retsel.xviii/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=flat" height="35" alt="instagram logo"  />
-  </a>
-  <a href="paypal.me/itslester09" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=PayPal&logo=paypal&label=&color=00457C&logoColor=white&labelColor=&style=flat" height="35" alt="paypal logo"  />
-  </a>
+  <img width="100%" alt="Lester's GitHub contribution activity" src="https://github-readme-activity-graph.vercel.app/graph?username=Lester0961&theme=radical&hide_border=true&hide_title=true&area=true">
+  <img height="150" alt="Lester's most used languages" src="https://github-readme-stats.vercel.app/api/top-langs?username=Lester0961&hide_title=true&layout=compact&card_width=320&langs_count=10&theme=radical&hide_border=true">
 </div>
 
-###
+<!-- Generated SVG statistics refresh every six hours through GitHub Actions. -->
