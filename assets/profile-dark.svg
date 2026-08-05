@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="860" viewBox="0 0 1200 860" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="884" viewBox="0 0 1200 884" role="img" aria-labelledby="title description">
   <title id="title">Lester's terminal-style GitHub profile</title>
   <desc id="description">An ASCII portrait and GitHub profile details displayed in a dark terminal.</desc>
   <style>
@@ -10,12 +10,13 @@
     .heading { fill: #58a6ff; font: 16px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; font-weight: 700; }
     .accent { fill: #3fb950; font: 16px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; }
     .ascii { fill: #3fb950; font: 13px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; }
+    .small { fill: #c9d1d9; font: 13px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace; }
   </style>
-  <rect class="terminal" x="1" y="1" rx="14" width="1198" height="858"/>
+  <rect class="terminal" x="1" y="1" rx="14" width="1198" height="882"/>
   <path class="bar" d="M15 2h1170a13 13 0 0 1 13 13v32H2V15A13 13 0 0 1 15 2z"/>
   <circle cx="27" cy="24" r="6" fill="#ff5f56"/><circle cx="49" cy="24" r="6" fill="#ffbd2e"/><circle cx="71" cy="24" r="6" fill="#27c93f"/>
   <text x="600" y="29" text-anchor="middle" class="muted">lester0961 — profile.sh</text>
-  <line x1="520" y1="62" x2="520" y2="822" stroke="#30363d"/>
+  <line id="side-divider" x1="520" y1="62" x2="520" y2="850" stroke="#30363d"/>
   <text x="40" y="75" class="ascii" xml:space="preserve"><tspan x="40" dy="0">                          .,.                       </tspan>
         <tspan x="40" dy="15">                  r3HSGMMS9&amp;9GGMhs.                 </tspan>
         <tspan x="40" dy="15">                iS@@@@@@@@@@@@@@@@B3,               </tspan>
@@ -62,23 +63,20 @@
   <text x="555" y="334" class="copy">Platforms: .......... GitHub, Vercel, Supabase</text>
   <text x="555" y="356" class="copy">Tools: .............. VS Code, Visual Studio, Git</text>
   <text x="555" y="388" class="heading">Currently.Studying</text>
-  <text x="555" y="410" class="copy">Systems Analysis and Design · Database Management</text>
-  <text x="555" y="432" class="copy">Web Development · Networking · Automata Theory</text>
-  <text x="555" y="454" class="copy">Computer Animation · Thesis Development</text>
+  <text x="555" y="410" class="copy">AI automation and integration; exploring new AI models.</text>
+  <text x="555" y="432" class="copy">Progressing toward full-stack software development</text>
+  <text x="555" y="454" class="copy">and cloud engineering.</text>
   <text x="555" y="486" class="heading">GitHub.Stats</text>
   <text x="555" y="508" class="copy">Repositories: ........ <tspan id="repo-count">15</tspan></text>
   <text x="555" y="530" class="copy">Contributed repos: ... <tspan id="contributed-repo-count">3</tspan></text>
   <text x="555" y="552" class="copy">Commits: ............. <tspan id="commit-count">228</tspan>   Stars: <tspan id="star-count">0</tspan>   Followers: <tspan id="follower-count">12</tspan></text>
-  <text x="555" y="574" class="copy">2026 contributions: .. <tspan id="contribution-count">477</tspan></text>
-  <text x="555" y="606" class="heading">Commit.Activity (latest 5 ranges)</text>
-  <text id="commit-range-1-row" x="555" y="628" class="copy" visibility="visible"><tspan id="commit-range-1-label">Commits 001-100</tspan> <tspan id="commit-range-1-added">+51,619</tspan> <tspan id="commit-range-1-deleted">-15,312</tspan> net <tspan id="commit-range-1-net">+36,307</tspan></text>
-  <text id="commit-range-2-row" x="555" y="648" class="copy" visibility="visible"><tspan id="commit-range-2-label">Commits 101-200</tspan> <tspan id="commit-range-2-added">+54,800</tspan> <tspan id="commit-range-2-deleted">-9,310</tspan> net <tspan id="commit-range-2-net">+45,490</tspan></text>
-  <text id="commit-range-3-row" x="555" y="668" class="copy" visibility="visible"><tspan id="commit-range-3-label">Commits 201-228</tspan> <tspan id="commit-range-3-added">+15,069</tspan> <tspan id="commit-range-3-deleted">-5,674</tspan> net <tspan id="commit-range-3-net">+9,395</tspan></text>
-  <text id="commit-range-4-row" x="555" y="688" class="copy" visibility="hidden"><tspan id="commit-range-4-label"></tspan> <tspan id="commit-range-4-added"></tspan> <tspan id="commit-range-4-deleted"></tspan> net <tspan id="commit-range-4-net"></tspan></text>
-  <text id="commit-range-5-row" x="555" y="708" class="copy" visibility="hidden"><tspan id="commit-range-5-label"></tspan> <tspan id="commit-range-5-added"></tspan> <tspan id="commit-range-5-deleted"></tspan> net <tspan id="commit-range-5-net"></tspan></text>
-  <text x="555" y="740" class="heading">Lines.Contributed</text>
-  <text x="555" y="762" class="copy">Added: <tspan id="lines-added">121,488</tspan>   Deleted: <tspan id="lines-deleted">30,296</tspan>   Net: <tspan id="lines-net">+91,192</tspan></text>
-  <text x="555" y="794" class="heading">Contact</text>
-  <text x="555" y="816" class="copy">GitHub @Lester0961 · LinkedIn /in/lester20 · Instagram @retsel.xviii</text>
-  <text x="40" y="836" class="muted">Last generated: <tspan id="last-update">2026-08-05 14:54 UTC</tspan> · source-only commits · profile automation excluded</text>
+  <text x="555" y="574" class="copy">2026 contributions: .. <tspan id="contribution-count">479</tspan></text>
+  <text x="555" y="606" class="heading">Commit.Activity (all 100-commit ranges)</text>
+  <g id="commit-range-rows"><text x="555" y="628" class="copy">Commits 001-100:  +51,619  -15,312  net +36,307</text><text x="555" y="648" class="copy">Commits 101-200:  +54,800  -9,310  net +45,490</text><text x="555" y="668" class="copy">Commits 201-228:  +15,069  -5,674  net +9,395</text></g>
+  <text id="lines-heading" x="555" y="740" class="heading">Lines.Contributed</text>
+  <text id="lines-values" x="555" y="762" class="copy">Added: <tspan id="lines-added">121,488</tspan>   Deleted: <tspan id="lines-deleted">30,296</tspan>   Net: <tspan id="lines-net">+91,192</tspan></text>
+  <text id="contact-heading" x="555" y="794" class="heading">Contact</text>
+  <text id="contact-line-1" x="555" y="816" class="small">Facebook /itslester.20 · Instagram @lestor_1.10.26 · LinkedIn /in/johnlester21</text>
+  <text id="contact-line-2" x="555" y="836" class="small">Portfolio lester0961.vercel.app · johnlesterdematera0961@gmail.com</text>
+  <text id="last-update-line" x="40" y="864" class="muted">Last generated: <tspan id="last-update">2026-08-05 15:24 UTC</tspan> · source-only commits · profile automation excluded</text>
 </svg>
