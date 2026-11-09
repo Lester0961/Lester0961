@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T06:36:51.923075+00:00",
+  "generated_at": "2026-11-09T22:24:36.808078+00:00",
   "repositories": {
     "JiroSimon/aurahub": {
       "commits": {
@@ -353,6 +353,425 @@
       },
       "default_branch": "main",
       "latest_commit": "6e0118af8e52b2fa4d0a7edd4bdeaf9dc30b98b7"
+    },
+    "Lester0961/crunchify-trial": {
+      "commits": {
+        "009b666b786676461f12867834f07e480c49eb58": {
+          "included": false
+        },
+        "07e08a58a1c8c7808a09e4e3f5c5f0f266165af9": {
+          "additions": 54,
+          "author_github_id": 196765233,
+          "date": "2026-11-05T06:36:17Z",
+          "deletions": 4,
+          "included": true
+        },
+        "0bf2ad213bd9352bb0869fd008c3cff1404e29cf": {
+          "included": false
+        },
+        "0e4d502b20b125e7a01acac0f2cb0eb03e13af9f": {
+          "additions": 12,
+          "author_github_id": 196765233,
+          "date": "2026-11-05T06:54:48Z",
+          "deletions": 0,
+          "included": true
+        },
+        "0ee4e3eda3c6c6cd6cc0ab77be75160eb69c57ab": {
+          "additions": 2,
+          "author_github_id": 196765233,
+          "date": "2026-11-04T16:49:14Z",
+          "deletions": 1,
+          "included": true
+        },
+        "0ff559c3763244a6e08c502f894d83a9f92da410": {
+          "additions": 241,
+          "author_github_id": 196765233,
+          "date": "2026-11-07T06:42:15Z",
+          "deletions": 53,
+          "included": true
+        },
+        "1133b5ec50214259c2fd3c3dffbfbf0635c7cb0e": {
+          "additions": 25,
+          "author_github_id": 196765233,
+          "date": "2026-11-04T02:38:24Z",
+          "deletions": 0,
+          "included": true
+        },
+        "132cf12fdeeda220659ccee46d42255206c953b3": {
+          "additions": 29,
+          "author_github_id": 196765233,
+          "date": "2026-11-04T06:59:34Z",
+          "deletions": 9,
+          "included": true
+        },
+        "141841e8935345eb127f248d4457900cd79510ec": {
+          "included": false
+        },
+        "15e27ff41558b4bf5032fdd284c4fdbbf09de33d": {
+          "included": false
+        },
+        "18f2ff5af94332762c2692d5f1ae7382e7045900": {
+          "included": false
+        },
+        "1b9ac0530f9914d5b3980cc3f1e681e4ce149a2d": {
+          "included": false
+        },
+        "1e247f95ae577340c12500b047a9bc94ec4177fa": {
+          "included": false
+        },
+        "22101c31e91183a4d88e288af11c629e14a9b0db": {
+          "included": false
+        },
+        "2277c997258c2ad81ede10c0b1c65be00dd7503f": {
+          "additions": 12,
+          "author_github_id": 196765233,
+          "date": "2026-11-04T01:59:57Z",
+          "deletions": 2,
+          "included": true
+        },
+        "23f85952f7b01e23a2f96fa9a82aedfa97f5c13b": {
+          "included": false
+        },
+        "284d2489ac44a71b109927e24bf466b4a3fc8e0a": {
+          "included": false
+        },
+        "2acd6497f573de8735ceec53fe42528016a3dace": {
+          "included": false
+        },
+        "2f8c6ce231fc02e3f099a1d26ed3585988814a8e": {
+          "included": false
+        },
+        "2f9bf7ba1fb0596870c2aae3f3fd2155282a169c": {
+          "additions": 31,
+          "author_github_id": 196765233,
+          "date": "2026-11-04T17:11:58Z",
+          "deletions": 10,
+          "included": true
+        },
+        "30a7fab9b24f41f385764341b896e1904ecc18e9": {
+          "additions": 25,
+          "author_github_id": 196765233,
+          "date": "2026-11-04T17:20:17Z",
+          "deletions": 13,
+          "included": true
+        },
+        "39b2c4fb8e44f27c7a98f0f7f41c7a265fa199ea": {
+          "additions": 1,
+          "author_github_id": 196765233,
+          "date": "2026-11-06T08:15:28Z",
+          "deletions": 1,
+          "included": true
+        },
+        "3edadd73416054619de2413171218ad8c800bddc": {
+          "included": false
+        },
+        "409d0f7a1367e3c709c85964513b92a8908c3af7": {
+          "additions": 2,
+          "author_github_id": 196765233,
+          "date": "2026-11-04T17:34:29Z",
+          "deletions": 2,
+          "included": true
+        },
+        "41946cfbb1c52ff36e8a49f24c1fd203663d5939": {
+          "included": false
+        },
+        "43ee2cb13bdc35293fe28c5274179708aec1d04e": {
+          "included": false
+        },
+        "46159dc19a9076f06362e8236c94c330ce62dc15": {
+          "additions": 24,
+          "author_github_id": 196765233,
+          "date": "2026-11-05T16:02:10Z",
+          "deletions": 4,
+          "included": true
+        },
+        "4da525779325309a121a2da55b14a70819af4d37": {
+          "additions": 0,
+          "author_github_id": 196765233,
+          "date": "2026-11-04T02:32:25Z",
+          "deletions": 0,
+          "included": true
+        },
+        "504ffa40637966da3e30009fe71c6312f82e01f3": {
+          "included": false
+        },
+        "526bd3d1b7f928cd120feb472337f6142407881c": {
+          "included": false
+        },
+        "53e5c01f921f6a6a5fa5430fa37bf10355212b30": {
+          "included": false
+        },
+        "54c2e815edb2aa8db1b84810b9926981045f86f9": {
+          "included": false
+        },
+        "58e4bf5409d45faf0f9d644962743841b29aa7b5": {
+          "additions": 2,
+          "author_github_id": 196765233,
+          "date": "2026-11-04T01:03:43Z",
+          "deletions": 1,
+          "included": true
+        },
+        "5f14d17ce23268a1427efb5effde622552acd031": {
+          "included": false
+        },
+        "61c755772ea0a9cf376a284563c219148b68442f": {
+          "additions": 43,
+          "author_github_id": 196765233,
+          "date": "2026-11-05T16:50:28Z",
+          "deletions": 13,
+          "included": true
+        },
+        "6239068d88552ad1049fc91edb4fb098dc1b72eb": {
+          "included": false
+        },
+        "64a17175baa1eb1742ec0ef38c616b6d48f6897a": {
+          "included": false
+        },
+        "65e4662081b367e2a27b82a6fe18a8175b836324": {
+          "additions": 159,
+          "author_github_id": 196765233,
+          "date": "2026-11-07T04:11:17Z",
+          "deletions": 11,
+          "included": true
+        },
+        "6674beefb57364aed169409b061c0fbef0dcea77": {
+          "additions": 28,
+          "author_github_id": 196765233,
+          "date": "2026-11-04T02:14:25Z",
+          "deletions": 8,
+          "included": true
+        },
+        "67ca99064f86ca25e0f9ea0dd3f0ff93717a3285": {
+          "additions": 5,
+          "author_github_id": 196765233,
+          "date": "2026-11-04T00:43:49Z",
+          "deletions": 3,
+          "included": true
+        },
+        "684aab2c485631426b7887180164f6b63b31a0ae": {
+          "included": false
+        },
+        "68d210aae73bfd3576c4f6e14fe1d23db4f9033a": {
+          "included": false
+        },
+        "6d239ada784db0dc65ae3db4223cd34ffda83f13": {
+          "included": false
+        },
+        "6e40f94591919d15a59e8e6248b4d6a34445742e": {
+          "additions": 18,
+          "author_github_id": 196765233,
+          "date": "2026-11-04T16:54:48Z",
+          "deletions": 2,
+          "included": true
+        },
+        "727425070e53fb977035ea569edaaf0a0d05dd61": {
+          "included": false
+        },
+        "744d93ff28946344d5a5fadd172229e02d3e8832": {
+          "included": false
+        },
+        "7741856fa3c3b6fae1cf7cee6622ac82a45eba9d": {
+          "included": false
+        },
+        "775c118bdba27a1204bd7552f258e54b87ec392d": {
+          "included": false
+        },
+        "813c641adf9003c52d31cab5a4fa27998048f4c0": {
+          "additions": 2512,
+          "author_github_id": 196765233,
+          "date": "2026-11-06T07:59:49Z",
+          "deletions": 638,
+          "included": true
+        },
+        "8d5a710eeae63ba4416df960886f6894f3312c0c": {
+          "included": false
+        },
+        "8f4f02bb404a4e7bf1f8bcb29388ac739946320d": {
+          "additions": 4665,
+          "author_github_id": 196765233,
+          "date": "2026-11-06T03:14:38Z",
+          "deletions": 326,
+          "included": true
+        },
+        "8fce6a31c86320463048a3cf9d0088d8796e7bc4": {
+          "additions": 40,
+          "author_github_id": 196765233,
+          "date": "2026-11-04T06:45:41Z",
+          "deletions": 2,
+          "included": true
+        },
+        "95933a1f70159dc00de55bfb0633cda1674136b6": {
+          "included": false
+        },
+        "9780fed2c738b671c67a99fd06559b41e09e82fa": {
+          "additions": 1,
+          "author_github_id": 196765233,
+          "date": "2026-11-04T01:40:04Z",
+          "deletions": 1,
+          "included": true
+        },
+        "9b16a62ccee8ec848e5f345dc87dd5806cce9e64": {
+          "additions": 607,
+          "author_github_id": 196765233,
+          "date": "2026-11-06T11:18:06Z",
+          "deletions": 1359,
+          "included": true
+        },
+        "9d1841efdccfb2665f61534a4bf65975ffadbf61": {
+          "included": false
+        },
+        "9daf983355e26bfda669dd5a425d7f84e2d2fdc1": {
+          "included": false
+        },
+        "9ef4ed6332ac6fc2a99dc17edd38dafd015409f3": {
+          "included": false
+        },
+        "a0011a47f695d4032e4f44d7a0c4a9a49e251b52": {
+          "included": false
+        },
+        "a21e5cc0f2387c41dab1cf2bcc4034bbf40128b7": {
+          "included": false
+        },
+        "a2e2ea3273114dc09c2c749f849933eb0d84450e": {
+          "included": false
+        },
+        "a3c3c1a7b1e56bf8500595eb09ae3d65a3f92453": {
+          "additions": 64,
+          "author_github_id": 196765233,
+          "date": "2026-11-04T16:41:40Z",
+          "deletions": 10,
+          "included": true
+        },
+        "a511f00c7447aa039cc61c8bccc014bfb8df7059": {
+          "included": false
+        },
+        "a8e55473ee8dccd578ae8e9868c673d734857398": {
+          "additions": 96,
+          "author_github_id": 196765233,
+          "date": "2026-11-04T16:30:17Z",
+          "deletions": 1,
+          "included": true
+        },
+        "aefacfc2aeb397d8398ccb3732024ff275cba69e": {
+          "included": false
+        },
+        "b2d2e08e654e5084b1f6fd6f23d64f4552e013fb": {
+          "additions": 38,
+          "author_github_id": 196765233,
+          "date": "2026-11-04T00:20:06Z",
+          "deletions": 11,
+          "included": true
+        },
+        "b301c94bf8fd9b78ec64dd2cfc2d58ddd66da8b8": {
+          "additions": 31,
+          "author_github_id": 196765233,
+          "date": "2026-11-04T06:35:15Z",
+          "deletions": 2,
+          "included": true
+        },
+        "c1207099a35dd24b94bb5615310726d56ceb9a2a": {
+          "included": false
+        },
+        "c5dbfa6b4df432d1b8429eeb6ff66ce8cfd12588": {
+          "included": false
+        },
+        "cb02b0ed8b99cd5f62bc3ffe6257512ad8beb425": {
+          "included": false
+        },
+        "ce51091eda3adf5e2affc9ee9a7912a8f883bdf7": {
+          "included": false
+        },
+        "cf05fe89a18e516c380ac0805a2191f50aa44914": {
+          "included": false
+        },
+        "cf363412467dcf489907c0d42bcbbe2e27bde493": {
+          "additions": 34,
+          "author_github_id": 196765233,
+          "date": "2026-11-04T00:34:38Z",
+          "deletions": 16,
+          "included": true
+        },
+        "cfa8858554fd7599d77312f589633f999ce8b299": {
+          "additions": 28,
+          "author_github_id": 196765233,
+          "date": "2026-11-04T01:54:47Z",
+          "deletions": 4,
+          "included": true
+        },
+        "d0870ca27662bfb31d4b996b00970746b813c892": {
+          "included": false
+        },
+        "dcf0918b1b5f76bff4292d7ed96eeacf49943eb8": {
+          "additions": 16,
+          "author_github_id": 196765233,
+          "date": "2026-11-04T00:51:58Z",
+          "deletions": 0,
+          "included": true
+        },
+        "e5d72687205716d501a9f70bd8f05da38f18bc57": {
+          "included": false
+        },
+        "e89c7508ce21998eb2dee43b2b9ee2d98fb0a65c": {
+          "included": false
+        },
+        "edc3b13ebd3ece1d28e6a5e56eb61aab4e0d7940": {
+          "additions": 14,
+          "author_github_id": 196765233,
+          "date": "2026-11-04T01:25:34Z",
+          "deletions": 12,
+          "included": true
+        },
+        "f1283b0b077ba5f8d0c3b14d5b0f4bf6ef9e89ce": {
+          "additions": 14,
+          "author_github_id": 196765233,
+          "date": "2026-11-05T02:10:08Z",
+          "deletions": 0,
+          "included": true
+        },
+        "f14566654001aeb37530a99ce9cc8cc829254ca9": {
+          "additions": 515,
+          "author_github_id": 196765233,
+          "date": "2026-11-04T00:03:07Z",
+          "deletions": 0,
+          "included": true
+        },
+        "f1b2ef3714716cd8714448f35d7c152cb9cfeec9": {
+          "included": false
+        },
+        "f261e2d79d1576a166de3f433c525070a6ad3790": {
+          "additions": 21,
+          "author_github_id": 196765233,
+          "date": "2026-11-05T02:07:44Z",
+          "deletions": 0,
+          "included": true
+        },
+        "f2d38b2b4c006e3fedc64153bbc95d5513774937": {
+          "additions": 28,
+          "author_github_id": 196765233,
+          "date": "2026-11-04T16:25:05Z",
+          "deletions": 0,
+          "included": true
+        },
+        "f9386c7c3be68fb3a6b1bc0b88d04be9d8f5ab69": {
+          "included": false
+        },
+        "faae1c18323380644f5581c8fa9cb33f1d604621": {
+          "additions": 72,
+          "author_github_id": 196765233,
+          "date": "2026-11-04T02:31:05Z",
+          "deletions": 21,
+          "included": true
+        },
+        "fcf9402dc2eccf29eb1c18ba2e1c3a3486c40ee3": {
+          "additions": 10,
+          "author_github_id": 196765233,
+          "date": "2026-11-04T16:59:02Z",
+          "deletions": 3,
+          "included": true
+        }
+      },
+      "default_branch": "main",
+      "latest_commit": "e89c7508ce21998eb2dee43b2b9ee2d98fb0a65c"
     },
     "Lester0961/foodorder": {
       "commits": {
@@ -2942,11 +3361,11 @@
     }
   },
   "summary": {
-    "added": 228037,
-    "commits": 359,
+    "added": 237556,
+    "commits": 397,
     "contributed_repositories": 3,
-    "deleted": 52297,
-    "repositories": 15
+    "deleted": 54840,
+    "repositories": 16
   },
   "username": "Lester0961",
   "version": 1
